@@ -1,1 +1,2 @@
-# TBD
+# Project Bitter Winter
+An in developmemnt [SpigotMC](https://www.spigotmc.org/wiki/about-spigot/) webpanel framework aimed to incerase accassability and help end users manage their servers and plugins
