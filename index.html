@@ -19,15 +19,16 @@
             }
 
             .jumbotron {
-                height: 100vh;
+                background-image: url("/jumbo.png");
+                image-rendering: optimizeQuality;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: bottom;
             }
         </style>
     </head>
-    <body>
-        <div class="jumbotron jumbotron-fluid bg-light">
-            <h1>Project Bitter Winter</h1>
-        </div>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id="navbar">
+    <body data-spy="scroll" data-target="#navbar" data-offset="0">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #383838;" id="navbar">
             <div class="container">
                 <a class="navbar-brand" href="#">Project Bitter Winter</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -35,135 +36,123 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#About">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Pricing">Pricing</a>
-                    </li>
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav mr-auto nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Open-Source">Open Source</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Pricing">Pricing</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec nulla diam. Ut rhoncus magna eros,
-            eget auctor justo malesuada ac. Maecenas tempor iaculis massa nec sollicitudin. Nam finibus sagittis
-            mauris. Suspendisse a diam et massa sodales dictum. In hac habitasse platea dictumst. Orci varius
-            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec nulla diam. Ut rhoncus magna eros,
-            eget auctor justo malesuada ac. Maecenas tempor iaculis massa nec sollicitudin. Nam finibus sagittis
-            mauris. Suspendisse a diam et massa sodales dictum. In hac habitasse platea dictumst. Orci varius
-            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec nulla diam. Ut rhoncus magna eros,
-            eget auctor justo malesuada ac. Maecenas tempor iaculis massa nec sollicitudin. Nam finibus sagittis
-            mauris. Suspendisse a diam et massa sodales dictum. In hac habitasse platea dictumst. Orci varius
-            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec nulla diam. Ut rhoncus magna eros,
-            eget auctor justo malesuada ac. Maecenas tempor iaculis massa nec sollicitudin. Nam finibus sagittis
-            mauris. Suspendisse a diam et massa sodales dictum. In hac habitasse platea dictumst. Orci varius
-            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        <div data-spy="scroll" data-target="#navbar" data-offset="100">
-            <h2 id="About">About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec nulla diam. Ut rhoncus magna eros,
-                eget auctor justo malesuada ac. Maecenas tempor iaculis massa nec sollicitudin. Nam finibus sagittis
-                mauris. Suspendisse a diam et massa sodales dictum. In hac habitasse platea dictumst. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <p>Aliquam eu purus fringilla, hendrerit tellus ac, suscipit eros. Mauris dignissim diam eu purus cursus
-                fermentum. Proin porttitor sem at sem rutrum, quis efficitur ipsum elementum. Aliquam a posuere metus,
-                elementum dignissim augue. Pellentesque egestas risus sit amet feugiat dapibus. Pellentesque egestas
-                imperdiet arcu et interdum. Mauris at lacus elit. Nunc tortor dui, pulvinar et tempor sed, tempus quis
-                elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sodales
-                nec tellus vitae accumsan.</p>
-            <p>Nullam mattis in augue in finibus. Maecenas iaculis quam maximus nunc vehicula, at mollis odio
-                scelerisque. Aliquam et semper odio. Integer non laoreet metus, vitae congue diam. Phasellus viverra a
-                mi in venenatis. Sed venenatis mattis metus. Sed tincidunt porttitor velit vitae tincidunt. Donec
-                tristique dictum tempor. Suspendisse tempus turpis sit amet risus laoreet, a aliquam ligula venenatis.
-                Vestibulum eget nulla varius, semper lorem sit amet, sollicitudin arcu. Integer vulputate accumsan
-                tortor vitae tincidunt. Curabitur mattis mollis faucibus. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit.</p>
-            <p>Mauris dignissim mi sit amet nulla cursus porta. Proin felis nunc, convallis non leo sed, mollis
-                condimentum sem. Nunc sit amet arcu accumsan, malesuada nunc ut, varius leo. Donec a erat sed ligula
-                vulputate rutrum ut quis nisi. Donec at turpis tincidunt, egestas lectus et, eleifend est. Vestibulum
-                sed lorem vestibulum, molestie dui vitae, cursus ipsum. Quisque congue sit amet tellus sed pulvinar.
-                Donec sollicitudin vehicula lacus, in congue leo commodo vel. Donec fringilla metus quis interdum
-                vestibulum. Aenean quis imperdiet erat. Quisque tristique arcu vitae velit pulvinar pellentesque.
-                Vestibulum quis ipsum pellentesque, gravida tortor ac, laoreet quam. Pellentesque ac tellus nec felis
-                consectetur suscipit in ac dui.</p>
-            <p>Nam cursus dapibus metus dignissim venenatis. Maecenas tempor facilisis metus eu tempor. Vestibulum
-                cursus elementum fringilla. Duis odio mauris, viverra sit amet laoreet sed, auctor vitae sapien. Donec
-                blandit lorem id enim suscipit, ac sodales odio condimentum. Nam pellentesque dapibus leo, a ultrices
-                eros venenatis sit amet. Donec lobortis erat non mauris venenatis molestie. Duis imperdiet orci at
-                congue fermentum. Aenean et elementum metus. Aenean accumsan, mauris vel gravida suscipit, dolor ligula
-                commodo erat, quis mattis nisl eros id urna. Ut lacus nisi, sagittis sed lobortis non, accumsan non ex.
-                Aenean bibendum malesuada lacus. Nulla id vulputate risus, ac congue quam. Maecenas lacinia dui sed
-                mauris cursus, et sodales mauris fringilla. Nam sed orci vitae sem feugiat fringilla. Quisque cursus
-                nisl odio, eu blandit ipsum aliquam vitae. </p>
-            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-                <h1 class="display-4" id="Pricing">Pricing</h1>
-                <p class="lead">
-                    Chose the tier that fits your needs
+        <div class="jumbotron jumbotron-fluid bg-light mx-auto text-center">
+            <h1 class="display-3 text-light">Project Bitter Winter</h1>
+        </div>
+        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-4" id="About">About</h1>
+            <p class="lead">
+                What our goals are
+            </p>
+        </div>
+        <div class="container">
+            <p>
+                Project Bitter Winter aims to connect users to their plugins using an accessable medium. 
+            </p>
+        </div>
+        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-4" id="Open-Source">Open Source</h1>
+            <p class="lead">
+                Collaborating with the community
+            </p>
+        </div>
+        <div class="container">
+            <p>
+                Open source software allows for 
+            </p>
+        </div>
+        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-4" id="Open-Source">API</h1>
+            <p class="lead">
+                Allowing developers to connect with our system
+            </p>
+        </div>
+        <div class="container">
+            <p>
+                
+            </p>
+        </div>
+        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-4" id="Pricing">Pricing</h1>
+            <p class="lead">
+                Choose the tier that fits your needs
+            </p>
+            <div class="alert alert-dark container" role="alert">
+                <h4 class="alert-heading">NOTICE!</h4>
+                <p>This product is not for sale nor for pre-order</p>
+                <hr>
+                <p class="mb-0">
+                    Project Bitter Winter is still under development and these are only example tiers
                 </p>
-                <div class="alert alert-warning text-left" role="alert">
-                    <h4 class="alert-heading">NOTICE!</h4>
-                    <p>This product is not for sale nor for pre-order</p>
-                    <hr>
-                    <p class="mb-0">
-                        project Bitter Winter is still under development and these are only example tiers
-                    </p>
-                </div>
             </div>
-            <div class="container">
-                <div class="card-deck mb-3 text-center">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-header">
-                            <div class="my-0 font-weight-normal">Community</div>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-                            <p class="lead">
-                                For community servers
-                            </p>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>Starter Extentions</li>
-                                <li>Community Extentions</li>
-                                <li>Email support</li>
-                            </ul>
-                            <button type="button" class="btn btn-lg btn-block btn-outline-primary" disabled>Sign up for
-                                free</button>
-                        </div>
+        </div>
+        <div class="container">
+            <div class="card-deck mb-3 text-center">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <div class="my-0 font-weight-normal">Community</div>
                     </div>
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-header">
-                            <div class="my-0 font-weight-normal">Premium</div>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$10 <small class="text-muted">/ mo</small></h1>
-                            <p class="lead">
-                                For large communities
-                            </p>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>Premium Extentions</li>
-                                <li>Community Extentions</li>
-                                <li>Priority email support</li>
-                            </ul>
-                            <button type="button" class="btn btn-lg btn-block btn-primary" disabled>Get started</button>
-                        </div>
+                    <div class="card-body">
+                        <h1 class="card-title">$0 <small class="text-muted">/ mo</small></h1>
+                        <p class="lead">
+                            For community servers
+                        </p>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>All Extentions</li>
+                            <li>Community Webpanel</li>
+                            <li>Email support</li>
+                        </ul>
+                        <button type="button" class="btn btn-lg btn-block btn-outline-primary" disabled>Sign up for
+                            free</button>
                     </div>
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-header">
-                            <div class="my-0 font-weight-normal">Host Provider</div>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$30 <small class="text-muted">/ mo</small></h1>
-                            <p class="lead">
-                                For server hosts
-                            </p>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>Custom webpanel</li>
-                                <li>Custom host</li>
-                                <li>Phone and email support</li>
-                            </ul>
-                            <button type="button" class="btn btn-lg btn-block btn-primary" disabled>Contact us</button>
-                        </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <div class="my-0 font-weight-normal">Premium</div>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">$10 <small class="text-muted">/ mo</small></h1>
+                        <p class="lead">
+                            For large communities
+                        </p>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>All Extentions</li>
+                            <li>Dedicated 1G of storage</li>
+                            <li>Priority email support</li>
+                        </ul>
+                        <button type="button" class="btn btn-lg btn-block btn-primary" disabled>Get started</button>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <div class="my-0 font-weight-normal">Host Provider</div>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">$30 <small class="text-muted">/ mo</small></h1>
+                        <p class="lead">
+                            For server hosts
+                        </p>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Custom webpanel</li>
+                            <li>Custom host</li>
+                            <li>Phone and email support</li>
+                        </ul>
+                        <button type="button" class="btn btn-lg btn-block btn-primary" disabled>Contact us</button>
                     </div>
                 </div>
             </div>
